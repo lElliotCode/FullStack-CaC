@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: #223;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        font-size: 1.3rem;
+
+        div{
+            text-align: center;
+        }
+
+        .header-links {
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+            padding: .5rem 1rem;
+            background-color: rgba(19, 19, 44, 0.456);
+            border-radius: 20px;
+            a{
+                color: #74bfe5;
+                padding: 1rem;
+                border-radius: 20px;
+                transition: all .3s;
+            }
+            a:hover{
+                background:rgb(19, 19, 43);
+                transition: all .3s;
+            }
+        }
+
+        .header-paragraph {
+            margin: 1rem;
+            color: #ddd
+        }
+    }
+
+    .main-content{
+        display: flex;
+        justify-content: space-around;
+        .main-section{
+            padding: 1rem 3rem;
+            width: 550px;
+            background: rgb(28, 28, 44);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .section-title{
+                margin: 1rem;
+            }
+            ol > div{
+                display: flex;
+                gap: .5rem;
+                margin: 1rem;
+                a{
+                    color: #8a84dd;
+                }
+                a:hover{
+                    color: rgb(42, 110, 155)
+                }
+            }
+            ul{
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                li{
+                    margin: 1rem 0 0 0;
+                    a{
+                        color: #8a84dd;
+                    }
+                    a:hover{
+                        color: rgb(42, 110, 155)
+                    }
+                }
+            }
+        }
+    }
+}
